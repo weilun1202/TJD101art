@@ -1,9 +1,59 @@
 @import url('reset.css');
-*{
+
+//basic
+@import 'sass/basic/var';
+@import 'sass/basic/color';
+@import 'sass/basic/breakpoint';
+@import 'sass/basic/font';
+@import 'sass/basic/spacing';
+
+// mixin
+@import 'sass/mixin/mixin';
+
+// component
+@import 'sass/component/btn';
+@import 'sass/component/from';
+@import 'sass/component/tab';
+
+// layout
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+@import 'sass/layout/login';
+@import 'sass/layout/nav';
+@import 'sass/layout/sidebar';
+
+//page
+@import 'sass/page/main';
+@import 'sass/page/about';
+// @import 'sass/page/product';
+
+// plugin
+@import  'sass/plugin/bootstrap';
+
+html {
+    font-size: $bodyfont;
+    font-family: $fontFamily;
+}
+
+body{
+    
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: 'Times New Roman', Times, serif;
 
+
+.banner h1{
+    font-size: map-get($font , h1);
+}
+.banner h2{
+    font-size: map-get($font , h2);
+}
+.banner h3{
+    font-size: map-get($font , h3);
+}
+.banner h4{
+    font-size: map-get($font , h4);
+}
+p{
+    font-size: map-get($font , p);
 }

@@ -1,0 +1,26 @@
+nav{
+
+    ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        li{
+            height: 50px;
+            a{
+                height: 100%;
+                padding: 0 30px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: $primary;
+
+                &:hover{
+                    background-color: $secondary3;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
