@@ -1,11 +1,11 @@
 @import url('reset.css');
 
 //basic
-@import 'sass/basic/var';
-@import 'sass/basic/color';
 @import 'sass/basic/breakpoint';
+@import 'sass/basic/color';
 @import 'sass/basic/font';
 @import 'sass/basic/spacing';
+@import 'sass/basic/var';
 
 // mixin
 @import 'sass/mixin/mixin';
@@ -30,30 +30,23 @@
 // plugin
 @import  'sass/plugin/bootstrap';
 
+*{
+    /* 避免圖片跑版(LOGO) */
+    box-sizing: border-box;
+}
+
 html {
     font-size: $bodyfont;
-    font-family: $fontFamily;
+    font-family: $fontTC;
+
+    background: url('./img/BGI.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 body{
-    
-    margin: 0;
-    padding: 0;
-}
-
-
-.banner h1{
-    font-size: map-get($font , h1);
-}
-.banner h2{
-    font-size: map-get($font , h2);
-}
-.banner h3{
-    font-size: map-get($font , h3);
-}
-.banner h4{
-    font-size: map-get($font , h4);
-}
-p{
-    font-size: map-get($font , p);
+    max-width: 1440px;
+    list-style: none;
+    margin: 0 auto;
 }

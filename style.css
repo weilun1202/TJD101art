@@ -1,5 +1,48 @@
 @charset "UTF-8";
 @import url("reset.css");
+.shoppingCart_btn {
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #2E5B4A;
+  color: #F5E9D8;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 40px;
+  margin: 20px 0;
+}
+
+header {
+  height: 200px;
+  background-color: #2E5B4A;
+}
+header .pageTitle {
+  font-size: 3rem;
+  font-family: "微軟正黑體";
+  color: #E5E5E5;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+footer {
+  background-color: #2E5B4A;
+  color: #E5E5E5;
+}
+footer .footerContact {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 24px;
+  padding: 60px;
+}
+
+nav {
+  height: 72px;
+  margin: 0 auto;
+}
 nav ul {
   width: 100%;
   list-style: none;
@@ -8,7 +51,7 @@ nav ul {
   align-items: center;
 }
 nav ul li {
-  height: 50px;
+  height: 72px;
 }
 nav ul li a {
   height: 100%;
@@ -16,39 +59,62 @@ nav ul li a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: #2E5B4A;
+  color: black;
 }
-nav ul li a:hover {
-  background-color: #6B705C;
-  height: 40px;
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+.aboutBanner {
+  padding: 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutBanner .aboutBannerTitle {
+  max-width: 50%;
+}
+.aboutBanner .aboutBannerTitle h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.aboutBanner .aboutBannerTitle p {
+  font-family: "Noto Serif TC";
+  font-size: 1rem;
+}
+.aboutBanner img {
+  height: 400px;
+}
+
+.aboutTitle {
+  font-size: 3rem;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.aboutTxt {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+* {
+  /* 避免圖片跑版(LOGO) */
+  box-sizing: border-box;
 }
 
 html {
   font-size: 16px;
   font-family: "微軟正黑體";
+  background: url("./img/BGI.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-}
-
-.banner h1 {
-  font-size: 3rem;
-}
-
-.banner h2 {
-  font-size: 2.5rem;
-}
-
-.banner h3 {
-  font-size: 2rem;
-}
-
-.banner h4 {
-  font-size: 1.5rem;
-}
-
-p {
-  font-size: 1rem;
+  max-width: 1440px;
+  list-style: none;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

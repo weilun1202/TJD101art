@@ -1,6 +1,7 @@
 // font 字體大小
 $bodyfont : 16px;   // basicfont
 
+// 使用方式： font-size: map-get($font, h1);
 $font:(
     h1 : 3rem,     // 48px 頁面主標題
     h2 : 2.5rem,   // 40px 區塊標題
@@ -10,4 +11,6 @@ $font:(
 );
 
 //  字型
-$fontFamily:'微軟正黑體';
+$fontEG:'Noto Serif TC';
+$fontTC:'微軟正黑體';
+$fontJP:'游ゴシック体';

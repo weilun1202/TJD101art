@@ -1,0 +1,15 @@
+.shoppingCart_btn{
+    // 字型
+    font-size: map-get($font, p);
+    // 圓角
+    border-radius: $spacing-2;
+    // 顏色
+    background-color: $primaryGreen;
+    color: $secondaryBeige;
+    
+    text-decoration: none;
+    text-align:center;
+
+    padding: 10px 40px;
+    margin:20px 0;
+}
